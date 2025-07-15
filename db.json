@@ -13,42 +13,6 @@
       "brand": "Samsung"
     },
     {
-      "id": "3",
-      "name": "Sony WH-1000XM5 Headphones",
-      "category": "Accessories",
-      "price": 249.99,
-      "stock": 40,
-      "description": "Industry-leading noise cancellation, 30 hours battery life.",
-      "image_url": "https://picsum.photos/seed/3/500/500",
-      "rating": 4.9,
-      "reviews_count": 120,
-      "brand": "Sony"
-    },
-    {
-      "id": "4",
-      "name": "Adidas Air Max 270",
-      "category": "Shoes",
-      "price": 249.99,
-      "stock": 53,
-      "description": "Breathable mesh upper, Max Air unit for responsive cushioning.",
-      "image_url": "https://picsum.photos/seed/4/500/500",
-      "rating": 4.7,
-      "reviews_count": 210,
-      "brand": "Adidas"
-    },
-    {
-      "id": "5",
-      "name": "Adidas Ultraboost 22",
-      "category": "Shoes",
-      "price": 180,
-      "stock": 35,
-      "description": "Primeknit upper with Boost midsole for maximum energy return.",
-      "image_url": "https://picsum.photos/seed/5/500/500",
-      "rating": 4.8,
-      "reviews_count": 95,
-      "brand": "Adidas"
-    },
-    {
       "id": "6",
       "name": "Dyson V11 Vacuum Cleaner",
       "category": "Home Appliances",

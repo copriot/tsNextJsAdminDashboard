@@ -38,6 +38,25 @@ body {
   .navbar {
     @apply flex flex-col gap-5 text-gray-500 fixed h-screen z-50;
   }
+  .subtitle {
+    @apply font-semibold text-lg md:text-xl;
+  }
+  .graphic {
+    @apply bg-white rounded-lg p-5;
+  }
 }
 @layer utilities {
+}
+
+.check {
+  label {
+    cursor: pointer;
+  }
+  input,
+  .nav-text {
+    display: none;
+  }
+  &:has(input:checked) .nav-text {
+    display: block;
+  }
 }

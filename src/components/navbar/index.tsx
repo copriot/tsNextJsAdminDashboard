@@ -4,10 +4,13 @@ import Navlinks from "./navLinks";
 
 export default function Navbar() {
   return (
-    <div className="min-h-screen min-w-[60px]  bg-white border-r border-zinc-300 text-black">
-      <div className="navbar">
-        <button className="grid place-items-center pt-5 text-2xl">
-          <RxHamburgerMenu />
+    <div className="min-h-screen min-w-[60px] shadow-lg bg-white text-black">
+      <div className="navbar check  bg-white border-r border-zinc-300">
+        <button className="flex items-start justify-start pl-5 pt-5 text-2xl">
+          <input type="checkbox" id="menu-toggle" />
+          <label htmlFor="menu-toggle">
+            <RxHamburgerMenu />
+          </label>
         </button>
 
         <div>
