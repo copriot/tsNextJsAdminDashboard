@@ -1,11 +1,13 @@
 import DeleteButton from "@/components/button/deleteButton";
 import { getProducts } from "@/utils/service";
+import { error } from "console";
 import Image from "next/image";
 import Link from "next/link";
 import { FaRegStar, FaStar, FaStarHalfAlt } from "react-icons/fa";
 
 export default async function Products() {
   const products = await getProducts();
+
   return (
     <div className="page">
       <div className="flex justify-between items-center mb-6">

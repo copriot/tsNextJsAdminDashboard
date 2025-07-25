@@ -35,7 +35,7 @@ interface GetOrdersResponse {
 }
 
 interface getProductsResponse {
-  id: number;
+  id: string;
   name: string;
   category: string;
   price: number;

@@ -30,18 +30,22 @@ export const sections: Option[] = [
   {
     icon: <FaChartArea />,
     name: "Grafikler",
+    url: "/charts",
   },
   {
     icon: <FaHeart />,
     name: "Favoriler",
+    url: "/favorites",
   },
   {
     icon: <FaBox />,
     name: "Envanter",
+    url: "/inventory",
   },
   {
     icon: <FaCog />,
     name: "Ayarlar",
+    url: "/settings",
   },
 ];
 
@@ -71,6 +75,7 @@ export const inputs = [
     name: "rating",
     type: "number",
     defaultValue: 0,
+    step: 0.1,
     min: 0,
     max: 5,
   },

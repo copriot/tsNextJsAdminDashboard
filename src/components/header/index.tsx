@@ -4,7 +4,7 @@ import Image from "next/image";
 import avatar from "@/assets/images/user_image.webp";
 export default function Header() {
   return (
-    <div className="border-b border-zinc-300 p-5 md:px-8 bg-white flex justify-between items-center">
+    <div className="border-b border-zinc-300 px-5 py-2 md:px-8 bg-white flex justify-between items-center">
       <Input />
       <div className="flex gap-5 items-center">
         <BiSolidBellRing className="text-xl cursor-pointer text-zinc-700" />
