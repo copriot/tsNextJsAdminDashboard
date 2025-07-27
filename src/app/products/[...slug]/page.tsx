@@ -10,7 +10,9 @@ import Link from "next/link";
 //form komponenti
 function ProductForm({ product }: { product: getProductsResponse | null }) {
   return (
-    <form action={handleSubmit(product?.id)} className="mx-5 ">
+    <form action={handleSubmit} className="mx-5 ">
+      {/* id hidden input */}
+      {product && <input type="hidden" name="id" value={product?.id} />}
       <div className="grid md:grid-cols-2 gap-6">
         {/* Sol Sütun */}
         <div className="space-y-4">

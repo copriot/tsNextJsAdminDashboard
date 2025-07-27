@@ -58,4 +58,31 @@ interface ChartData {
   }[];
 }
 
-export type { Option, InfoCardItem, GetOrdersResponse, ChartData, getProductsResponse };
+interface getUsersResponse {
+  id: string;
+  name: string;
+  email: string;
+  password: string;
+  address: {
+    street: string;
+    city: string;
+    postal_code: string;
+    country: string;
+  };
+  phone: string;
+  orders: {
+    order_id: number;
+    product_id: number;
+    quantity: number;
+    total_price: number;
+    order_date: string;
+  }[];
+}
+export type {
+  Option,
+  InfoCardItem,
+  GetOrdersResponse,
+  ChartData,
+  getProductsResponse,
+  getUsersResponse,
+};

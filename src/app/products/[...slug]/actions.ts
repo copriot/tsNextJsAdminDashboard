@@ -4,8 +4,10 @@ import { getProductsResponse } from "@/types";
 import { createProduct, updateProduct } from "@/utils/service";
 import { redirect } from "next/navigation";
 import { isRedirectError } from "next/dist/client/components/redirect-error";
-export async function handleSubmit(id: string | null, formData: FormData) {
+import { toast } from "react-toastify";
+export async function handleSubmit(formData: FormData) {
   try {
+    const id = formData.get("id") as string;
     const name = formData.get("name") as string;
     const brand = formData.get("brand") as string;
     const price = formData.get("price") as string;
@@ -35,9 +37,11 @@ export async function handleSubmit(id: string | null, formData: FormData) {
 
     if (id) {
       await updateProduct(id, productData);
+      //  toast.success("Ürün başarıyla güncellendi");
       redirect(`/products`);
     } else {
       await createProduct(productData);
+      // toast.success("Ürün başarıyla oluşturuldu");
       redirect(`/products`);
     }
   } catch (error) {

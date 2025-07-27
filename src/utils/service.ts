@@ -1,4 +1,4 @@
-import { GetOrdersResponse, getProductsResponse } from "@/types";
+import { GetOrdersResponse, getProductsResponse, getUsersResponse } from "@/types";
 
 const baseURL = "http://localhost:9090";
 
@@ -73,6 +73,39 @@ const createProduct = async (
   }
 };
 
+//Tüm kullanıcıları getir
+const getUsers = async (): Promise<getUsersResponse[]> => {
+  const res = await fetch(`${baseURL}/users`);
+  return res.json();
+};
+
+//Kullanıcıyı sil
+const deleteUser = async (id: number | string): Promise<void> => {
+  const res = await fetch(`${baseURL}/users/${id}`, {
+    method: "DELETE",
+  });
+  return res.json();
+};
+
+const getUser = async (id: number | string): Promise<getUsersResponse> => {
+  const res = await fetch(`${baseURL}/users/${id}`);
+  return res.json();
+};
+
+//anasayfa için verileri getiren fonksiyon
+const getValues = async () => {
+  const user = await getUsers();
+  const product = await getProducts();
+  const orders = await getOrders();
+
+  return {
+    total_users: user.length,
+    total_products: product.length,
+    total_orders: orders.length,
+    total_price: orders.reduce((acc, order) => acc + order.total_price, 0),
+  };
+};
+
 export {
   getOrders,
   getProducts,
@@ -80,4 +113,8 @@ export {
   createProduct,
   getProduct,
   updateProduct,
+  getUsers,
+  deleteUser,
+  getUser,
+  getValues,
 };

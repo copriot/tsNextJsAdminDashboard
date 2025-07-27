@@ -13,16 +13,16 @@
       "brand": "Samsung"
     },
     {
-      "id": "6",
       "name": "Dyson V11 Vacuum Cleaner",
-      "category": "Home Appliances",
-      "price": 599.99,
+      "price": 183.99,
       "stock": 15,
+      "category": "Elektronik",
       "description": "Powerful suction, LCD screen, up to 60 minutes of run time.",
       "image_url": "https://picsum.photos/seed/6/500/500",
       "rating": 4.9,
       "reviews_count": 45,
-      "brand": "Dyson"
+      "brand": "Dyson",
+      "id": "6"
     },
     {
       "id": "7",
@@ -206,57 +206,6 @@
     }
   ],
   "users": [
-    {
-      "id": "1",
-      "name": "Ahmet Yılmaz",
-      "email": "ahmet.yilmaz@example.com",
-      "password": "hashed_password_1",
-      "address": {
-        "street": "Atatürk Cad. No: 15",
-        "city": "Istanbul",
-        "postal_code": "34000",
-        "country": "Turkey"
-      },
-      "phone": "+90 555 123 4567",
-      "orders": [
-        {
-          "order_id": 1001,
-          "product_id": 1,
-          "quantity": 1,
-          "total_price": 1299.99,
-          "order_date": "2024-09-10"
-        },
-        {
-          "order_id": 1002,
-          "product_id": 4,
-          "quantity": 2,
-          "total_price": 299.98,
-          "order_date": "2024-08-15"
-        }
-      ]
-    },
-    {
-      "id": "2",
-      "name": "Elif Kaya",
-      "email": "elif.kaya@example.com",
-      "password": "hashed_password_2",
-      "address": {
-        "street": "İstiklal Mah. 123. Sok. No: 45",
-        "city": "Ankara",
-        "postal_code": "06000",
-        "country": "Turkey"
-      },
-      "phone": "+90 532 654 3210",
-      "orders": [
-        {
-          "order_id": 1003,
-          "product_id": 3,
-          "quantity": 1,
-          "total_price": 349.99,
-          "order_date": "2024-07-22"
-        }
-      ]
-    },
     {
       "id": "3",
       "name": "Mehmet Demir",

@@ -52,6 +52,12 @@ body {
   }
 }
 @layer utilities {
+  th {
+    @apply py-[15px] px-[20px] whitespace-nowrap;
+  }
+  td {
+    @apply p-[20px] border-b text-center border-zinc-300;
+  }
 }
 
 .check {
